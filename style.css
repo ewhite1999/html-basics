@@ -7,7 +7,7 @@ body {
   --main-text: #f1faee;
   --secondary-background: #a8dadc;
   --secondary-text: #457b9d;
-  --max-width: 900px;
+  /* --max-width: 900px; */
   font-family: "Poppins", sans-serif;
   color: var(--main-text);
 }
