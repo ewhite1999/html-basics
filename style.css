@@ -1,14 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
 body {
-  --dark: black;
+  margin: 0;
+  padding: 0;
+  --pink-acent: #e63946;
+  --main-background: #1d3557;
+  --main-text: #f1faee;
+  --secondary-background: #a8dadc;
+  --secondary-text: #457b9d;
+  --max-width: 900px;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-text);
 }
 
 .container {
   margin: 0 auto;
   text-align: center;
+  max-width: var(--max-width);
 }
 .page {
   min-height: 100vh;
   display: flex;
+  background-color: var(--main-background);
 }
 section {
   margin: auto;
@@ -16,20 +28,51 @@ section {
 nav {
   display: flex;
   justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  max-width: var(--max-width);
+  background-color: var(--main-background);
 }
 nav > a {
+  padding: 0.5em 1.5em;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+nav > a:hover {
+  background-color: var(--pink-acent);
+}
+a {
   text-decoration: none;
-  color: var(--dark);
+  color: inherit;
 }
 .title {
   font-size: 3rem;
 }
 
 .title.main {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 0;
 }
 
 #title > h2 {
   margin-top: 0;
+}
+.flex_container {
+  display: flex;
+}
+.project_img {
+  width: 100%;
+  height: auto;
+}
+.card {
+  padding: 3em;
+}
+
+.card > p {
+  font-size: 1.5rem;
+}
+
+#project_page {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
 }
