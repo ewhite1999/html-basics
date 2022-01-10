@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  --pink-acent: #e63946;
+  --main-background: #1d3557;
+  --main-text: #f1faee;
+  --secondary-background: #a8dadc;
+  --secondary-text: #457b9d;
+  /* --max-width: 900px; */
+  font-family: "Poppins", sans-serif;
+  color: var(--main-text);
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: var(--max-width);
+}
+.page {
+  min-height: 100vh;
+  display: flex;
+  background-color: var(--main-background);
+}
+section {
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  position: fixed;
+  width: 100%;
+  max-width: var(--max-width);
+  background-color: var(--main-background);
+}
+nav > a {
+  padding: 0.5em 1.5em;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  margin: 0.5em;
+}
+nav > a:hover {
+  background-color: var(--pink-acent);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.title {
+  font-size: 3rem;
+}
+
+.title.main {
+  font-size: 5rem;
+  margin-bottom: 0;
+}
+
+#title > h2 {
+  margin-top: 0;
+}
+.flex_container {
+  display: flex;
+}
+.project_img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+.card {
+  padding: 3em;
+}
+
+.card > p {
+  font-size: 1.5rem;
+  background: white;
+  width: 100%;
+  margin: -7px 0;
+  border-radius: 0 0 15px 15px;
+  padding: 0.5em 0;
+}
+
+#project_page {
+  background-color: var(--secondary-background);
+  color: var(--secondary-text);
+  padding-top: 5em;
+}
