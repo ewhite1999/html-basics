@@ -1,3 +1,7 @@
+body {
+  --dark: black;
+}
+
 .container {
   margin: 0 auto;
   text-align: center;
@@ -8,4 +12,24 @@
 }
 section {
   margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav > a {
+  text-decoration: none;
+  color: var(--dark);
+}
+.title {
+  font-size: 3rem;
+}
+
+.title.main {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+#title > h2 {
+  margin-top: 0;
 }
