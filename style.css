@@ -9,7 +9,7 @@ body {
   --secondary-text: #457b9d;
   font-family: "Poppins", sans-serif;
   color: var(--main-text);
-  --header-height: -85px;
+  --header-height: -84.4px;
 }
 
 .container {
@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   display: flex;
   background-color: var(--main-background);
+  padding: 1em;
 }
 section {
   margin: auto;
