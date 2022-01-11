@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--main-text);
   --header-height: -84.4px;
+  box-sizing: border-box;
 }
 
 .container {
@@ -17,8 +18,11 @@ body {
   text-align: center;
   max-width: var(--max-width);
 }
-.page {
+#title_page {
   min-height: 100vh;
+}
+.page {
+  min-height: calc(100vh + var(--header-height) - 1em);
   display: flex;
   background-color: var(--main-background);
   padding: 1em;
