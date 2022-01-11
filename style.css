@@ -99,6 +99,10 @@ a {
 .logo_list {
   list-style-type: none;
 }
+.logo_list > li {
+  padding: 0.5em 0;
+}
+
 #gitlogo::before {
   content: "";
   display: inline-block;
