@@ -2,12 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  --pink-acent: #e63946;
+  --pink-accent: #e63946;
   --main-background: #1d3557;
   --main-text: #f1faee;
   --secondary-background: #a8dadc;
   --secondary-text: #457b9d;
-  /* --max-width: 900px; */
   font-family: "Poppins", sans-serif;
   color: var(--main-text);
   --header-height: -85px;
@@ -41,7 +40,7 @@ nav > a {
   margin: 0.5em;
 }
 nav > a:hover {
-  background-color: var(--pink-acent);
+  background-color: var(--pink-accent);
 }
 a {
   text-decoration: none;
@@ -83,7 +82,6 @@ a {
 #project_page {
   background-color: var(--secondary-background);
   color: var(--secondary-text);
-  /* padding-top: 5em; */
 }
 
 .anchor {
@@ -91,4 +89,19 @@ a {
   position: relative;
   top: var(--header-height);
   visibility: hidden;
+}
+
+.logo_list {
+  list-style-type: none;
+}
+#gitlogo::before {
+  content: "";
+  display: inline-block;
+  --photo_dimension: 16px;
+  height: var(--photo_dimension);
+  width: var(--photo_dimension);
+  background-size: var(--photo_dimension);
+  background-image: url("./img/gitlogo_light.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
 }
