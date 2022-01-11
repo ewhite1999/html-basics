@@ -10,6 +10,7 @@ body {
   /* --max-width: 900px; */
   font-family: "Poppins", sans-serif;
   color: var(--main-text);
+  --header-height: -85px;
 }
 
 .container {
@@ -82,5 +83,12 @@ a {
 #project_page {
   background-color: var(--secondary-background);
   color: var(--secondary-text);
-  padding-top: 5em;
+  /* padding-top: 5em; */
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: var(--header-height);
+  visibility: hidden;
 }
